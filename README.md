@@ -33,7 +33,7 @@
 #### Design
     compass watch
 #### Content
-    jekyll serve
+    jekyll serve --watch
 
 ### Upgrading
 
