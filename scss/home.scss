@@ -1,28 +1,13 @@
 @import "settings";
 @import "general";
 @import "colors";
+@import "topbar";
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400);
 
 .topbar-wide-bg {background-color: $topbar-wide-bg;}
-$topbar-bg: none;
-$topbar-height: rem-calc(90);
-$topbar-title-font-size: rem-calc(22);
-$topbar-title-weight: 400;
-$topbar-link-font-size: rem-calc(17);
 .parallax-hidden {overflow: hidden;}
 
 .header {
-  .top-bar {
-    background: none;
-  .name {text-transform: uppercase;}
-  }
-  .top-bar-section {
-    ul {background: none;}
-    li:not(.has-form) a:not(.button) {background: none;}
-    li:not(.has-form) a:not(.button):hover {background: lighten($topbar-wide-bg, 25%);}
-  }
-
-
 	min-height: rem-calc(600);
 
 	background-image: url(../images/bg/connected.png), $banner-gradient-start; /* Old browsers */

@@ -1,1 +1,4 @@
-img.round{border-radius:50%}
+/* line 3, ../scss/general.scss */
+img.round {
+  border-radius: 50%;
+}
