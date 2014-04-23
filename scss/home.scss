@@ -1,0 +1,96 @@
+@import "settings";
+@import "general";
+@import "colors";
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400);
+
+.topbar-wide-bg {background-color: $topbar-wide-bg;}
+$topbar-bg: none;
+$topbar-height: rem-calc(90);
+$topbar-title-font-size: rem-calc(22);
+$topbar-title-weight: 400;
+$topbar-link-font-size: rem-calc(17);
+.parallax-hidden {overflow: hidden;}
+
+.header {
+  .top-bar {
+    background: none;
+  .name {text-transform: uppercase;}
+  }
+  .top-bar-section {
+    ul {background: none;}
+    li:not(.has-form) a:not(.button) {background: none;}
+    li:not(.has-form) a:not(.button):hover {background: lighten($topbar-wide-bg, 25%);}
+  }
+
+
+	min-height: rem-calc(600);
+
+	background-image: url(../images/bg/connected.png), $banner-gradient-start; /* Old browsers */
+	background-image: url(../images/bg/connected.png), -moz-linear-gradient(-45deg,  $banner-gradient-start 0%, $banner-gradient-middle 50%, $banner-gradient-end 100%); /* FF3.6+ */
+	background-image: url(../images/bg/connected.png), -webkit-gradient(linear, left top, right bottom, color-stop(0%,$banner-gradient-start), color-stop(50%,$banner-gradient-middle), color-stop(100%,$banner-gradient-end)); /* Chrome,Safari4+ */
+	background-image: url(../images/bg/connected.png), -webkit-linear-gradient(-45deg,  $banner-gradient-start 0%,$banner-gradient-middle 50%,$banner-gradient-end 100%); /* Chrome10+,Safari5.1+ */
+	background-image: url(../images/bg/connected.png), -o-linear-gradient(-45deg,  $banner-gradient-start 0%,$banner-gradient-middle 50%,$banner-gradient-end 100%); /* Opera 11.10+ */
+	background-image: url(../images/bg/connected.png), -ms-linear-gradient(-45deg,  $banner-gradient-start 0%,$banner-gradient-middle 50%,$banner-gradient-end 100%); /* IE10+ */
+	background-image: url(../images/bg/connected.png), linear-gradient(135deg,  $banner-gradient-start 0%,$banner-gradient-middle 50%,$banner-gradient-end 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$banner-gradient-start}', endColorstr='#{$banner-gradient-end}',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  .catchphrase {
+		margin-top: rem-calc(178);
+    word-spacing: 0.4em;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 2.8em;
+  }
+}
+
+.code {
+  text-align: left;
+  border-radius: 3px;
+  padding: rem-calc(8);
+  background: #2F2F2F;
+  span {
+    font-size: rem-calc(13);
+    line-height: rem-calc(20);
+    display: block;
+  }
+}
+
+.main-row {
+  padding-top: rem-calc(100);
+  color: white;
+  h1 {
+    margin-bottom: rem-calc(100);
+    font-weight: 300;
+  }
+  h2 {font-weight: 300;}
+  .intro{font-size: rem-calc(21)}
+}
+.main-row:not(:last-of-type){padding-bottom: rem-calc(180);}
+
+.steps {background-color: darken($banner-gradient-end, 15%);}
+.how-it-works {background-color: darken($banner-gradient-start, 10%);}
+.how-to-install {background-color: #16A352;}
+@media #{$large-up} {.how-to-install {.row:last-of-type{margin-top: rem-calc(60);}}}
+.footer {
+  background-color: #2C2C2C;
+  .creators {margin-bottom: rem-calc(100)}
+  .links {
+    margin-bottom: rem-calc(60);
+    li {
+      display: inline;
+    }
+    a {
+      padding-right: 20px;
+      color: white;
+      text-transform: uppercase;
+    }
+    @media #{$medium-up} {
+      li+li:before {
+        padding-right: 20px;
+        content: '| ';
+      }
+    }
+  }
+}
+
+@import "foundation";

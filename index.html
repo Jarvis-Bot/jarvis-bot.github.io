@@ -3,161 +3,157 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation</title>
+    <title>Jarvis | Control anything from any service</title>
     <link rel="stylesheet" href="stylesheets/app.css" />
+    <link rel="stylesheet" href="stylesheets/home.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
-    <div class="row">
-      <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="large-12 columns">
-        <div class="panel">
-          <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-          <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-          <p>Once you've exhausted the fun in this document, you should check out:</p>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-          <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-        </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-            </div>        
-          </div>
+  <div class="header parallax-hidden">
+    <div class="topbar-wide-bg">
+      <div class="row">
+        <div class="small-12 columns">
+          <nav class="top-bar" data-topbar>
+            <ul class="title-area">
+              <li class="name">
+                <h1><a href="#">Jarvis</a></h1>
+              </li>
+              <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+            </ul>
+            <section class="top-bar-section">
+              <!-- Right Nav Section -->
+              <ul class="right">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">Github</a></li>
+              </ul>
+            </section>
+          </nav>
         </div>
       </div>
     </div>
 
     <div class="row">
-      <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
+      <div class="small-12 columns">
+        <h1 class="text-center catchphrase parallax">Control anything from any service.</h1>
+      </div>
+    </div>
+  </div>
 
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="callout panel">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-        </div>
-        
-        <hr />
-                
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-12.columns" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <div class="row collapse">
-                <label>Input Label</label>
-                <div class="small-9 columns">
-                  <input type="text" placeholder="small-9.columns" />
-                </div>
-                <div class="small-3 columns">
-                  <span class="postfix">.com</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Select Box</label>
-              <select>
-                <option value="husker">Husker</option>
-                <option value="starbuck">Starbuck</option>
-                <option value="hotdog">Hot Dog</option>
-                <option value="apollo">Apollo</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-6 medium-6 columns">
-              <label>Choose Your Favorite</label>
-              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-            </div>
-            <div class="large-6 medium-6 columns">
-              <label>Check these out</label>
-              <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-              <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Textarea Label</label>
-              <textarea placeholder="small-12.columns"></textarea>
-            </div>
-          </div>
-        </form>
-      </div>     
+  <div class="main-row steps text-center">
+    <div class="row">
+      <div class="small-12 columns">
+        <h1>Jarvis is an open-source assistant, listening to your orders from any service.</h2>
+      </div>
+    </div>
+    <div class="row">
+    <p>Asciinema? YouTube?</p>
+    </div>
+  </div>
 
-      <div class="large-4 medium-4 columns">
-        <h5>Try one of these buttons:</h5>
-        <p><a href="#" class="small button">Simple Button</a><br/>
-        <a href="#" class="small radius button">Radius Button</a><br/>
-        <a href="#" class="small round button">Round Button</a><br/>            
-        <a href="#" class="medium success button">Success Btn</a><br/>
-        <a href="#" class="medium alert button">Alert Btn</a><br/>
-        <a href="#" class="medium secondary button">Secondary Btn</a></p>           
-        <div class="panel">
-          <h5>So many components, girl!</h5>
-          <p>A whole kitchen sink of goodies comes with Foundation. Checkout the docs to see them all, along with details on making them your own.</p>
-          <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>          
+  <div class="main-row how-it-works text-center">
+    <div class="row">
+      <div class="small-12 columns">
+        <h1>How does it work?</h2>
+        <p class="intro">
+          Jarvis relies on addons.<br>
+          There are 3 different types: sources, receivers and clients.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-12 medium-6 large-4 columns">
+        <h2>Sources</h2>
+        <p>Sources are feeding Jarvis with data.</p>
+        <p>
+          It can be a Tweet, a picture from Instagram, an email, or even a
+          pressed button. Sky is the limit! If you can retrieve data from a
+          service, an object, then it can become a source.
+        </p>
+      </div>
+      <div class="small-12 medium-6 large-4 columns">
+        <h2>Receivers</h2>
+        <p>Receivers are handling data. They are waiting to be triggered.</p>
+        <p>
+          What about publishing every Instagram pic you post on Tumblr, saving
+          them in local, and sending it to your mum via mail? Or receiving a failed
+          notification from Travis-CI, playing an alarm sound on your
+          computer/homeserver, and blinking every Philips Hue in your house/office?
+        </p>
+      </div>
+      <div class="small-12 medium-12 large-4 columns">
+      <h2>Clients</h2>
+      <p>Clients are the gate between sources and receivers.</p>
+      <p>
+        They are used by receivers to emit something. If you need to tweet
+        anything, you don't have to create a way to do it in the receiver,
+        there is probably a client to do that.
+        You can find different clients: Twitter, Tumblr, Instagram, but also
+        Philips Hue, speakers... Anything with an input can become a client.
+      </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-row how-to-install text-center">
+    <div class="row">
+      <div class="small-12 columns">
+        <h1>How to install Jarvis?</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-12 medium-6 columns">
+        <h3>1. Clone</h3>
+        <div class="code">
+          <code>
+            <span>$ git clone https://github.com/Jarvis-Bot/Jarvis-Core.git Jarvis</span>
+          </code>
+        </div>
+      </div>
+      <div class="small-12 medium-6 columns">
+        <h3>2. Install</h3>
+        <div class="code">
+          <code>
+            <span>$ cd Jarvis/bin</span>
+            <span>$ ./jarvis install [third-party repo]</span>
+            <span>$ ./jarvis</span>
+          </code>
         </div>
       </div>
     </div>
+    <div class="row">
+      <div class="small-12 medium-12 columns">
+        <h3>3. Enjoy!</h3>
+        <p>
+          Now that Jarvis is successfully installed, you can look for addons
+          on Github, or craft your owns!
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-row footer text-center">
+    <div class="row">
+      <div class="small-12 columns">
+        <ul class="links">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Github</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-12 creators">
+        <h2>Crafted with love by</h2>
+        <img class="round" src="/images/victorbersy.jpg" width="200" alt="Victor Bersy">
+        <h3><a href="#">Victor Bersy</a></h3>
+      </div>
+    </div>
+  </div>
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/parallax.js"></script>
   </body>
 </html>
