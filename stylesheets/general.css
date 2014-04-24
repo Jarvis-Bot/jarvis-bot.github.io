@@ -1,4 +1,5 @@
-/* line 3, ../scss/general.scss */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400);
+/* line 4, ../scss/general.scss */
 img.round {
   border-radius: 50%;
 }

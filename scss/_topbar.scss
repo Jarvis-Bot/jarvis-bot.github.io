@@ -1,0 +1,13 @@
+$topbar-bg: none;
+$topbar-height: rem-calc(90);
+$topbar-title-font-size: rem-calc(22);
+$topbar-title-weight: 400;
+$topbar-link-font-size: rem-calc(17);
+$topbar-link-bg: none;
+$topbar-dropdown-bg: none;
+$topbar-link-bg-hover: lighten($topbar-wide-bg, 25%);;
+$topbar-menu-link-color-toggled: white;
+$topbar-menu-icon-color-toggled: white;
+nav.top-bar.name {text-transform: uppercase;}
+.topbar-wide-bg {background-color: $topbar-wide-bg;}
+.top-bar .name {text-transform: uppercase;}
