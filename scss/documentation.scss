@@ -20,7 +20,7 @@ $side-nav-link-color: white;
 .topbar-wide-bg {background-color: white;}
 
 .side-nav {
-  $side-nav-link-color-hover: ligten($primary-color, 25%);
+  $side-nav-link-color-hover: lighten($primary-color, 25%);
   li:not(:first-child) {border-top: 1px solid rgba(255, 255, 255, 0.4);}
   li {
     margin: 0px;
@@ -42,12 +42,10 @@ $side-nav-link-color: white;
     }
   }
 }
-.off-canvas-list {
-    a.active {font-weight: bold;}
-}
+.off-canvas-list {a.active {font-weight: bold;}}
 
 .documentation {
-  p, code {word-wrap: break-word;}
+  h1, h2, h3, h4, h5, h6, p, code {word-wrap: break-word;}
   h1 {
     color: $primary-color;
     text-transform: uppercase;
