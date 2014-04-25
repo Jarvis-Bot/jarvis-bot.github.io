@@ -41,8 +41,21 @@ $side-nav-link-color: white;
       font-weight: bold;
     }
   }
+  .sub {
+    li {
+      list-style-type: none;
+      border-top: none;
+      a {
+        font-size: rem-calc(15);
+        padding: 2px 0px 2px 0px;
+      }
+    }
+  }
 }
-.off-canvas-list {a.active {font-weight: bold;}}
+.off-canvas-list {
+  a.active {font-weight: bold;}
+  li {list-style-type: none;}
+}
 
 .documentation {
   h1, h2, h3, h4, h5, h6, p, code {word-wrap: break-word;}

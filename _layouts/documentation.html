@@ -25,8 +25,13 @@
         <ul class="off-canvas-list">
           <li><label>Documentation</label></li>
           <li><a {% if page.title == 'Documentation' %} class="active" {% endif %} href="/documentation/">Documentation Home</a></li>
-          <li><a {% if page.title == 'Usage' %} class="active" {% endif %} href="/documentation/usage/">Usage</a></li>
-          <li><a {% if page.title == 'Developer API' %} class="active" {% endif %} href="/documentation/developer-api/">Developer API</a></li>
+          <li><a {% if page.title == 'Getting Started' %} class="active" {% endif %} href="/documentation/getting-started/">Getting Started</a></li>
+          <li><a {% if page.title == 'Addons' %} class="active" {% endif %} href="/documentation/addons/">Addons</a></li>
+          <ul class="sub">
+            <li><a {% if page.title == 'Sources' %} class="active" {% endif %} href="/documentation/addons/sources/">Sources</a></li>
+            <li><a {% if page.title == 'Receivers' %} class="active" {% endif %} href="/documentation/addons/receivers/">Receivers</a></li>
+            <li><a {% if page.title == 'Clients' %} class="active" {% endif %} href="/documentation/addons/clients/">Clients</a></li>
+          </ul>
           <li><a {% if page.title == 'FAQ' %} class="active" {% endif %} href="/documentation/faq/">FAQ</a></li>
         </ul>
       </aside>
@@ -36,10 +41,15 @@
       <div class="row">
         <div class="small-4 medium-3 columns show-for-medium-up">
           <ul class="side-nav">
-            <li><a {% if page.title == 'Documentation' %} class="current" {% endif %} href="/documentation/">Documentation Home</a></li>
-            <li><a {% if page.title == 'Usage' %} class="current" {% endif %} href="/documentation/usage/">Usage</a></li>
-            <li><a {% if page.title == 'Developer API' %} class="current" {% endif %} href="/documentation/developer-api/">Developer API</a></li>
-            <li><a {% if page.title == 'FAQ' %} class="current" {% endif %} href="/documentation/faq/">FAQ</a></li>
+          <li><a {% if page.title == 'Documentation' %} class="active" {% endif %} href="/documentation/">Documentation Home</a></li>
+          <li><a {% if page.title == 'Getting Started' %} class="active" {% endif %} href="/documentation/getting-started/">Getting Started</a></li>
+          <li><a {% if page.title == 'Addons' %} class="active" {% endif %} href="/documentation/addons/">Addons</a></li>
+          <ul class="sub">
+            <li><a {% if page.title == 'Sources' %} class="active" {% endif %} href="/documentation/addons/sources/">Sources</a></li>
+            <li><a {% if page.title == 'Receivers' %} class="active" {% endif %} href="/documentation/addons/receivers/">Receivers</a></li>
+            <li><a {% if page.title == 'Clients' %} class="active" {% endif %} href="/documentation/addons/clients/">Clients</a></li>
+          </ul>
+          <li><a {% if page.title == 'FAQ' %} class="active" {% endif %} href="/documentation/faq/">FAQ</a></li>
           </ul>
         </div>
 
@@ -47,13 +57,13 @@
           <div class="small-12 medium-9 columns">
             <div class="page-background"></div>
             <div class="row documentation">
-              <div class="small-12 large-offset-1 columns">
+              <div class="small-12 large-9 large-offset-1 columns">
                 <h1>{{ page.title }}</h1>
                 <hr>
-                {% capture doc_page %}
-    {{ content }}
-                {% endcapture %}
-                {{ doc_page | markdownify }}
+{% capture doc_page %}
+{{ content }}
+{% endcapture %}
+{{ doc_page | markdownify }}
               </div>
             </div>
           </div>
