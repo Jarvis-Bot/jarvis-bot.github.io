@@ -20,7 +20,8 @@ $header-font-color: #FFF;
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$banner-gradient-start}', endColorstr='#{$banner-gradient-end}',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
   .catchphrase {
-		margin-top: rem-calc(178);
+		margin-top: rem-calc(115);
+    @media #{$medium-up} {margin-top: rem-calc(178);}
     word-spacing: 0.4em;
     font-weight: 300;
     text-transform: uppercase;
