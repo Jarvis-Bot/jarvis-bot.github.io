@@ -58,7 +58,15 @@ $side-nav-link-color: white;
 }
 
 .documentation {
-  h1, h2, h3, h4, h5, h6, p, code {word-wrap: break-word;}
+  h1, h2, h3, h4, h5, h6, p {word-wrap: break-word;}
+  .highlight {
+    background: #DFDFDF;
+    padding: 10px;
+    overflow-x: scroll;
+  }
+  p code {
+    background:#E7E7E7;
+  }
   h1 {
     color: $primary-color;
     text-transform: uppercase;
