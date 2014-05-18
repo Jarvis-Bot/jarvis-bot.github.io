@@ -89,19 +89,25 @@ css: home
         <h3>2. Install</h3>
         <div class="code">
           <code>
-            <span>$ cd Jarvis/bin</span>
-            <span>$ ./jarvis install [third-party repo]</span>
-            <span>$ ./jarvis</span>
+            <span>$ export PATH=Jarvis/bin:$PATH</span>
+            <span>$ jarvis addons install</span>
+            <span>$ jarvis</span>
           </code>
         </div>
       </div>
     </div>
     <div class="row">
-      <div class="small-12 medium-12 columns">
+      <div class="small-12 medium-6 medium-centered columns">
         <h3>3. Enjoy!</h3>
         <p>
           Now that Jarvis is successfully installed, you can look for addons
           on Github, or craft your owns!
+        </p>
+        <p>
+          Don't forget to put this at the end of your .bashrc / .zshrc file :
+          <div class="code">
+            <code><span>export PATH=[PATH/TO/JARVIS/FOLDER]/bin:$PATH</span></code>
+          </div>
         </p>
       </div>
     </div>
